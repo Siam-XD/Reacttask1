@@ -17,17 +17,17 @@ const Services = () => {
         }
     ]
   return (
-    <div className="flex flex-col items-center py-30">
+    <div className="flex flex-col items-center py-30 px-4">
         <div className="my-12">
-            <h2 className="text-6xl font-bold text-[#FFF] text-center w-xl">The Service We Provide For You</h2>
+            <h2 className="text-3xl md:text-6xl font-bold text-[#FFF] text-center md:w-xl">The Service We Provide For You</h2>
         </div>
-        <div className="flex justify-between">
+        <div className="flex flex-col md:flex-row justify-between">
             {services.map((service, index) => {
                 return (
-                    <div key={index} className="text-center flex flex-col items-center gap-5 w-[380px] m-5">
+                    <div key={index} className="text-center flex flex-col items-center gap-5 md:w-[380px] m-5">
                         <img src={service.icon} alt={service.name} />
-                        <h3 className="font-medium text-2xl text-[#FFF]">{service.name}</h3>
-                        <p className="text-lg font-normal text-[rgba(255,255,255,0.71)]">{service.detail}</p>
+                        <h3 className="font-medium text-xl md:text-2xl text-[#FFF]">{service.name}</h3>
+                        <p className="text-base md:text-lg font-normal text-[rgba(255,255,255,0.71)]">{service.detail}</p>
                     </div>
                 )
             })}
