@@ -17,7 +17,7 @@ const Services = () => {
         }
     ]
   return (
-    <div className="flex flex-col items-center py-30 px-4">
+    <section className="flex flex-col items-center py-30">
         <div className="my-12">
             <h2 className="text-3xl md:text-6xl font-bold text-[#FFF] text-center md:w-xl">The Service We Provide For You</h2>
         </div>
@@ -32,7 +32,7 @@ const Services = () => {
                 )
             })}
         </div>
-    </div>
+    </section>
   )
 }
 
